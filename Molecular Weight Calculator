@@ -1,0 +1,24 @@
+
+#include <stdio.h>
+
+int main() {
+    float carbon, hydrogen, oxygen;
+    float total;
+
+    printf("Enter number of Carbon atoms: ");
+    scanf("%f", &carbon);
+
+    printf("Enter number of Hydrogen atoms: ");
+    scanf("%f", &hydrogen);
+
+    printf("Enter number of Oxygen atoms: ");
+    scanf("%f", &oxygen);
+
+    total = (carbon * 12.01) +
+            (hydrogen * 1.008) +
+            (oxygen * 16.00);
+
+    printf("\nMolecular Weight = %.3f g/mol\n", total);
+
+    return 0;
+}
